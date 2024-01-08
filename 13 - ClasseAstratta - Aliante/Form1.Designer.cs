@@ -57,6 +57,7 @@
             this.Aggiungibutton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.Visualizzabutton = new System.Windows.Forms.Button();
+            this.Prezzo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FusoliaraRadio
@@ -312,11 +313,23 @@
             this.Visualizzabutton.UseVisualStyleBackColor = true;
             this.Visualizzabutton.Click += new System.EventHandler(this.Visualizzabutton_Click);
             // 
+            // Prezzo
+            // 
+            this.Prezzo.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Prezzo.Location = new System.Drawing.Point(361, 321);
+            this.Prezzo.Name = "Prezzo";
+            this.Prezzo.Size = new System.Drawing.Size(100, 34);
+            this.Prezzo.TabIndex = 29;
+            this.Prezzo.Text = "Prezzo";
+            this.Prezzo.UseVisualStyleBackColor = true;
+            this.Prezzo.Click += new System.EventHandler(this.Prezzo_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Prezzo);
             this.Controls.Add(this.Visualizzabutton);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.Aggiungibutton);
@@ -384,6 +397,7 @@
         private System.Windows.Forms.Button Aggiungibutton;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button Visualizzabutton;
+        private System.Windows.Forms.Button Prezzo;
     }
 }
 

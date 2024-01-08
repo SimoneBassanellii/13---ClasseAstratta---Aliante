@@ -14,41 +14,37 @@ namespace _13___ClasseAstratta___Aliante
     public partial class Form1 : Form
     {
         private List<string> values = new List<string>();
+        private Aliante aliante;
 
         public Form1()
         {
             InitializeComponent();
+            aliante = new Aliante();
         }
 
         private void Aggiungibutton_Click(object sender, EventArgs e)
         {
-
-
             if (FusoliaraRadio.Checked)
             {
-                values.Add(textBox1.Text);
-                values.Add(textBox2.Text);
-
+                values.Add($"La lunghezza è: " + textBox1.Text);
+                values.Add($"La larghezza è: " + textBox2.Text);
             }
             if (AlaRadio.Checked)
             {
-                values.Add(textBox4.Text);
-                values.Add(textBox3.Text);
-
+                values.Add($"La lunghezza è: " + textBox4.Text);
+                values.Add($"L'apertura è: " + textBox3.Text);
             }
             if (CodaRadio.Checked)
             {
-                values.Add(textBox5.Text);
+                values.Add($"La lunghezza è: " + textBox5.Text);
             }
             if (RuotaRadio.Checked)
             {
-                values.Add(textBox7.Text);
-                values.Add(textBox6.Text);
-                values.Add(textBox8.Text);
-                
-                values.Add(textBox10.Text);
-                values.Add(textBox9.Text);
-
+                values.Add($"L'altezza è: " + textBox7.Text);
+                values.Add($"La larghezza è: " + textBox6.Text);
+                values.Add($"Il raggio è: " + textBox8.Text);
+                values.Add($"I pollici sono: " + textBox10.Text);
+                values.Add($"Il materiale è: " + textBox9.Text);
             }
         }
 
@@ -59,5 +55,11 @@ namespace _13___ClasseAstratta___Aliante
                 listView1.Items.Add(value);
             }
         }
+
+        private void Prezzo_Click(object sender, EventArgs e)
+        {
+          //
+        }
+
     }
 }
